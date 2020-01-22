@@ -1,5 +1,7 @@
 node{
-
+  stage('repo'){
+    git 'https://github.com/SrinathCh/GOL.git'
+  }
   stage('package'){
     sh 'mvn pakage'
   } 
