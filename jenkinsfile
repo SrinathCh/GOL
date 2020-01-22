@@ -1,13 +1,8 @@
-node {
+node{
 
-   stage ('build the packages') {
-      // mvn package
-	  sh 'mvn package'
-   }
-
-   stage ('archival') {
-     // archiving artifacts
-	 archive 'target/*.jar'
-   }
-
+stage('package'){
+sh 'mvn pakage'
+} 
+stage('archive')
+archive 'target/*jar'
 }
