@@ -3,7 +3,7 @@ node{
     git 'https://github.com/SrinathCh/GOL.git'
   }
   stage('package'){
-    sh 'mvn pakage'
+    sh 'mvn package'
   } 
   stage('archive'){
     archive 'gameoflife-core/target/*jar'
