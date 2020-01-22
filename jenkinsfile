@@ -3,6 +3,7 @@ node{
 stage('package'){
 sh 'mvn pakage'
 } 
-stage('archive')
+stage('archive'){
 archive 'target/*jar'
+}
 }
