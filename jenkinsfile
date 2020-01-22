@@ -6,6 +6,6 @@ node{
     sh 'mvn pakage'
   } 
   stage('archive'){
-    archive 'target/*.jar'
+    archive 'gameoflife-core/target/*jar'
   }
 }
